@@ -27,11 +27,15 @@
 - **Docker**: Платформа для контейнеризации.
 
 ## Запуск приложения
-Шаг 1: Построение Docker образа
+Шаг 1: Получениеф айлов проекта
+```bash
+git pull https://github.com/danissimoae/library-management-cli.git
+```
+Шаг 2: Построение Docker образа
 ```bash
 docker build -t library-management-cli .
 ```
-Шаг 2: Запуск Docker контейнера
+Шаг 3: Запуск Docker контейнера
 ```bash
 docker run -it --rm library-management-cli
 ```
